@@ -1,102 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Student Registration Form </title>
-    <link rel="stylesheet" href="StudeentRegistration.css">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="StudeentRegistration.css" />
 </head>
-
 <body>
-    <section class="registration-container">
-        <h2 class="heading-style"> Student Registration </h2>
-        <form action="" class="registration-form">
-
-            <h4> Personal Details </h4>
-            <div class="personal-details">
-                <div class="three-details-item">
-                    <label>
-                        Full Name
-                        <input type="text" name="name" placeholder="Enter your name">
-                    </label>
-                    <label>
-                        Father Name
-                        <input type="text" name="fName" placeholder="Enter father name">
-                    </label>
-                    <label>
-                        Mother Name
-                        <input type="text" name="mName" placeholder="Enter mother name">
-                    </label>
-                </div>
-
-                <div class="three-details-item">
-                    <label>
-                        Date of Birth
-                        <input type="text" name="DOB" placeholder="Enter your DOB">
-                    </label>
-                    <label>
-                        Adhar No
-                        <input type="text" name="aadharNo" placeholder="Enter aadhar number">
-                    </label>
-                    <label>
-                        Email
-                        <input type="email" name="email" placeholder="Enter your email">
-                    </label>
-                </div>
-
-                <div class="three-details-item">
-                    <label>
-                        Mobile Number
-                        <input type="tel" name="phone" placeholder="Enter mobile number">
-                    </label>
-                    <label>
-                        Gender
-                        <input type="text" name="gender" placeholder="Enter your gender">
-                    </label>
-                    <label>
-                        Address
-                        <input type="text" name="address" placeholder="Enter your Address">
-                    </label>
-                </div>
+    <div class="container">
+        <form action="">
+        <h2>Registration Form</h2>
+        <div class="content">
+            <div class="input-box">
+                <label>FullName</label>
+                <input type="text" placeholder="Enter the full Name" name="name" required />
             </div>
-            <hr><br>
-
-            <h4> Other Details </h4>
-            <div class="identity-details">
-                <div class="three-details-item">
-                    <label>
-                        Stream
-                        <input type="text" name="stream" placeholder="Enter your stream">
-                    </label>
-                    <label>
-                        Previous Class
-                        <input type="text" name="previousClass" placeholder="Enter previous class">
-                    </label>
-                    <label>
-                        Hobbies
-                        <input type="text" name="hobbies" placeholder="Enter your hobbies">
-                    </label>
-                </div>
-                <div class="three-details-item">
-                    <label>
-                        CollegeId Number
-                        <input type="number" name="CollegeId_number" placeholder="Enter CollegeId Number">
-                    </label>
-                    <label>
-                        Religion
-                        <input type="text" name="religion" placeholder="Enter your religion">
-                    </label>
-                    <label>
-                        Category
-                        <input type="text" name="category" placeholder="Enter your category">
-                    </label>
-                </div>
+            <div class="input-box">
+                <label>Father name</label>
+                <input type="text" placeholder="Enter the Father Name" name="fathername" required />
             </div>
-            <button class="submit-button"> Submit </button>
-        </form>
-    </section>
+            <div class="input-box">
+                <label>Mother name</label>
+                <input type="text" placeholder="Enter the Mother Name" name="mothername" required />
+            </div>
+            <div class="input-box">
+                <label>Date of birth</label>
+                <input type="date" placeholder="Enter the Mother Name" name="date" required />
+            </div>
+            <div class="input-box">
+                <label>Adhare no</label>
+                <input type="number" placeholder="Enter the adhare number" name="adhare no" required />
+            </div>
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter the Email" name="email" required />
+            </div>
+            <div class="input-box">
+                <label for="mobile-numbe">Mobile Number</label>
+                <input type="number" placeholder="Enter the phone number" name="mobile-number" required />
+            </div>
+            <div class="input-box">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter the password" name="password" required />
+            </div>
+            <div class="input-box">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" placeholder="Enter the confirm password" name="confirm_password" required />
+            </div>
+            <div class="input-box">
+                <label for="confirm_password">Address</label>
+                <input type="text" placeholder="Enter the Address" name="Address" required />
+            </div>
+            <span class="gender-title">Gender</span>
+            <div class="gender-category">
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">FeMale</label>
+            </div>
+            <div class="alert">
+                <p>By clicking you agree terms and conditions <a  href="#">Terms</a> <a  href="#">Privacy policy</a> and also accept the cookies</p>
+            </div>
+              <div class="button-container">
+                <button>Register</button>
+              </div>
+        </div>
+ 
+    </form>
+    </div>
 </body>
-
 </html>
